@@ -7,19 +7,27 @@
   "version": "0.0.1",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "src/test"
   },
   "dependencies": {
+    "chinese-s2t": "^1.0.0",
     "commander": "^7.0.0",
+    "eol": "^0.9.1",
     "i18next-scanner": "^3.0.0",
     "intl-messageformat": "^2.2.0",
     "intl-messageformat-parser": "^1.4.0",
+    "js-crc": "^0.2.0",
     "kiwi-intl": "^1.2.4",
     "lodash": "^4.17.20",
     "lodash.get": "^4.4.2",
-    "vinyl-fs": "^3.0.3"
+    "sortobject": "^4.14.0",
+    "vinyl": "^2.2.1",
+    "vinyl-fs": "^3.0.3",
+    "xlsx": "^0.16.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "react": "^17.0.1"
+  },
   "scripts": {
     "test": "npm run test"
   },

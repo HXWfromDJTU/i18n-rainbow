@@ -1,11 +1,11 @@
 const _ = require('lodash')
 const eol = require('eol')
 const path = require('path')
-const sortobject = require('sortobject')
+const { default: sortobject } = require('sortobject')
 const VirtualFile = require('vinyl')
 const flattenObjectKeys = require('i18next-scanner/lib/flatten-object-keys').default
 const omitEmptyObject = require('i18next-scanner/lib/omit-empty-object').default
-const utils = require('./utils')
+const helpers = require('../helpers')
 
 module.exports = function generateI18nextScannerConfig (config) {
   return {
@@ -70,7 +70,7 @@ module.exports = function generateI18nextScannerConfig (config) {
           let oldTranslations = {}
 
           try {
-            oldTranslations = utils.readJSON(path.resolve(config.output, oldTranslationPath), true)
+            oldTranslations = helpers.readJSON(path.resolve(config.output, oldTranslationPath), true)
           }
           catch (err) {
             console.log(`Previous locales ${oldTranslationPath} doesn't exist, new file is generated`)
