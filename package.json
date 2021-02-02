@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "i18n-rainbow": "index.js"
+  },
+  "name": "i18n-rainbow",
+  "description": "1. 提取翻译 2. i18Next - scanner 3. 文档工具方案",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "commander": "^7.0.0",
+    "i18next-scanner": "^3.0.0",
+    "intl-messageformat": "^2.2.0",
+    "intl-messageformat-parser": "^1.4.0",
+    "kiwi-intl": "^1.2.4",
+    "lodash": "^4.17.20",
+    "lodash.get": "^4.4.2",
+    "vinyl-fs": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HXWfromDJTU/i18n-rainbow.git"
+  },
+  "keywords": [
+    "i18n",
+    "i18n-tools",
+    "i18n-next"
+  ],
+  "author": "swainwong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HXWfromDJTU/i18n-rainbow/issues"
+  },
+  "homepage": "https://github.com/HXWfromDJTU/i18n-rainbow#readme"
+}
